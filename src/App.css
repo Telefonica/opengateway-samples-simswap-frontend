@@ -1,0 +1,67 @@
+.App {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	height: 100vh;
+	gap: 6em;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+	text-align: left;
+	margin: 20px auto;
+	width: 240px;
+	height: 360px;
+}
+
+.use_case > label {
+	display: flex;
+	font-weight: bold;
+	width: 240px;
+}
+
+.use_case > form label {
+	text-align: left;
+	font-weight: lighter;
+	margin-bottom: -12px;
+}
+
+.use_case > form label.footnote {
+	font-size: 0.8em;
+	margin-top: -12px;
+	margin-bottom: 0px;
+}
+
+input, button {
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	padding: 6px 9px;
+	font-size: 1em;
+}
+
+.spinner {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 80px;
+}
+
+.spinner::after {
+	content: "";
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	border: 4px solid #ccc;
+	border-top-color: #333;
+	animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+}
